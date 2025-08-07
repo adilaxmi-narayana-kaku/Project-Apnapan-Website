@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Apnapan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo" onclick="showPage('home')">
+                    <div class="logo-icon"><img alt="apnapan logo" class="logo" src="logo.png"></div>
+                    Tree Arc Foundation
+                </a>
+                <button class="nav-toggle" onclick="toggleNav()">☰</button>
+                <nav>
+                    <ul id="nav-menu">
+                        <li><a href="#" onclick="showPage('home')" class="active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" onclick="showPage('k12-solutions')">K-12 Solutions ▼</a>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="showPage('programs')">Programs</a>
+                                <a href="#" onclick="showPage('products')">Products</a>
+                                <a href="#" onclick="showPage('curriculum')">Curriculum</a>
+                            </div>
+                        </li>
+                        <li><a href="#" onclick="showPage('apnapan-fellowship')">Apnapan Fellowship</a></li>
+                        <li><a href="#" onclick="showPage('apna-ai')">Apna AI</a></li>
+                        <li><a href="#" onclick="showPage('resources')">Resources</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-image">
+                            <h1>Project अपनापन</h1>
+                            <img src="picture.jpg" alt="Project Apnapan - Education and Empowerment">
+                        </div>
+                        <div class="hero-text">
+                            <p>Project Apnapan is dedicated to fostering student agency and belonging in your school. Through our research, data-driven inquiry and evidence-based solutions, we aim to transform your school into inclusive environments where students feel empowered to take ownership of their learning and develop strong emotional connections with your school community.</p>
+                            <div class="cta-button-container">
+                                <a href="#" class="cta-button" onclick="showPage('partners')">Partner with us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why We Exist Section - Now with purple background and moved up -->
+            <section class="section section-purple" style="padding-top: 1rem; padding-bottom: 3rem; margin-top: -2rem;">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Why we exist?</h2>
+                        <div class="section-content">
+                            <p class="highlight-blue">Think back to your school days!</p>
+                            <p>Was there ever a moment when you felt truly <span class="highlight-green">VALUED, HEARD, SAFE, or CONNECTED</span>?</p>
+                            <p>Maybe it was a teacher who noticed your effort, a friend who supported you, or just knowing you had a place where you belonged.</p>
+                            <p>Now, imagine the opposite—feeling <span class="highlight-red">INVISIBLE, UNHEARD, or UNSAFE</span>. That's the difference between a student who thrives and one who disengages.</p>
+                            <p class="highlight-blue">Where do you think your students are today? Are they connected with their teachers and feel belonging to your school community — or are they more isolated than ever?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- The Problem Section -->
+            <section class="section section-light">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>The Problem</h2>
+                        <p style="font-size: 1.2rem; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.8;">
+                            <strong>When students don't feel they belong, the impact isn't just emotional. It affects their learning, behavior, and well-being.</strong>
+                        </p>
+                    </div>
+                    
+                    <div class="cards-grid">
+                        <div class="problem-card red">
+                            <h3>Academic Decline</h3>
+                            <p>When students feel disconnected, they engage less, lose motivation, and struggle academically. Research shows that a strong sense of belonging is linked to better classroom participation and higher achievement (Goodenow, 1993).</p>
+                        </div>
+                        
+                        <div class="problem-card orange">
+                            <h3>Behavioral Problems</h3>
+                            <p>Students without a sense of belonging are more likely to disengage, act out, or even stop attending school altogether. Research highlights a link between lack of belonging and increased absenteeism or disruptive behavior (Osterman, 2000).</p>
+                        </div>
+                        
+                        <div class="problem-card purple">
+                            <h3>Emotional Distress</h3>
+                            <p>Loneliness, anxiety, and even depression increase when students feel like they don't belong—especially during adolescence, a time when peer acceptance is crucial (Cause, 1986).</p>
+                        </div>
+                        
+                        <div class="problem-card teal">
+                            <h3>Lower Self-Esteem</h3>
+                            <p>Exclusion and isolation don't just affect academics—they shape a student's confidence and self-worth, impacting both their social and academic life.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What We Do Section - Now with purple background -->
+            <section class="section section-purple">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>What We Do</h2>
+                        <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.9); max-width: 800px; margin: 0 auto;">Our approach to creating an inclusive environment stands on four key pillars:</p>
+                    </div>
+                    
+                    <div class="cards-grid">
+                        <div class="card">
+                            <h3>Action Research</h3>
+                            <p>We conduct action research in schools with students, teachers, and administrators to understand the current state of enabling factors such as student autonomy and a sense of belonging within the school community.</p>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>Collective Inquiry</h3>
+                            <p>We collaborate closely with schools, teachers, and educational leaders to design and evaluate interventions. This ensures that every solution is tailored to the unique context and needs of each school community.</p>
+                        </div>
+                        
+                        <div class="card">
+                            <h3>Co-Design Solutions</h3>
+                            <p>We engage school communities in co-creating meaningful solutions based on the findings of our research, ensuring ownership and sustainability.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Solutions Section -->
+            <section class="section section-light">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Our Solutions</h2>
+                        <div class="section-content">
+                            <p>Transforming schools means transforming the way we, as educators, think, act, and evolve. We understand that change doesn't happen overnight — which is why we provide thoughtful, evidence-based tools and support systems.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="solutions-list">
+                        <ul>
+                            <li>Digital & Ethical AI-based K–12 Solutions</li>
+                            <li>Local Innovations rooted in global K–12 research</li>
+                            <li>The Power of Data & Educational Analytics</li>
+                            <li>Teacher Professional Development & Support</li>
+                            <li>Belonging-Centered Curriculum Frameworks</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Impact Section - Now with purple background -->
+            <section class="section section-purple">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Our Impact</h2>
+                        <div class="section-content">
+                            <p>Impact content will be added here.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Partners Section -->
+            <section class="partners-section">
+                <div class="container">
+                    <h2>Our Partners</h2>
+                    <div class="partner-logos">
+                        <div class="partner-logo" onclick="window.open('https://www.avpschool.in/', '_blank')">
+                            <div style="background: #4CAF50; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 1.5rem;">🏫</div>
+                            <h4>AVP School</h4>
+                        </div>
+                        <div class="partner-logo" onclick="window.open('https://brainzeduworld.com/', '_blank')">
+                            <div style="background: #2196F3; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 1.5rem;">🧠</div>
+                            <h4>Brainz Edu World</h4>
+                        </div>
+                        <div class="partner-logo" onclick="window.open('https://www.virmanieducationtrust.org/', '_blank')">
+                            <div style="background: #FF9800; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 1.5rem;">VET</div>
+                            <h4>Virmani Education Trust</h4>
+                        </div>
+                        <div class="partner-logo" onclick="window.open('https://www.facebook.com/iqraahmedabad/', '_blank')">
+                            <div style="background: #9C27B0; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 1.5rem;">📚</div>
+                            <h4>Iqra Ahmedabad</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- K-12 Solutions Page -->
+        <div id="k12-solutions" class="page">
+            <div class="placeholder-page">
+                <h1>K-12 Solutions</h1>
+                <p>Our comprehensive K-12 solutions are designed to foster student agency and belonging through research-backed methodologies and innovative approaches.</p>
+                <a href="#" class="back-button" onclick="showPage('home')">← Back to Home</a>
+            </div>
+        </div>
+
+        <!-- Programs Page -->
+        <div id="programs" class="page">
+            <div class="placeholder-page">
+                <h1>Programs</h1>
+                <p>Explore our innovative programs designed to enhance student engagement and create inclusive learning environments through evidence-based practices.</p>
+                <a href="#" class="back-button" onclick="showPage('k12-solutions')">← Back to K-12 Solutions</a>
+            </div>
+        </div>
+
+        <!-- Products Page -->
+        <div id="products" class="page">
+            <div class="placeholder-page">
+                <h1>Products</h1>
+                <p>Discover our suite of educational products that support teachers and administrators in building stronger, more connected school communities.</p>
+                <a href="#" class="back-button" onclick="showPage('k12-solutions')">← Back to K-12 Solutions</a>
+            </div>
+        </div>
+
+        <!-- Curriculum Page -->
+        <div id="curriculum" class="page">
+            <div class="placeholder-page">
+                <h1>Curriculum</h1>
+                <p>Our belonging-centered curriculum frameworks are designed to integrate seamlessly with existing educational structures while promoting student agency.</p>
+                <a href="#" class="back-button" onclick="showPage('k12-solutions')">← Back to K-12 Solutions</a>
+            </div>
+        </div>
+
+        <!-- Apnapan Fellowship Page -->
+        <div id="apnapan-fellowship" class="page">
+            <div class="placeholder-page">
+                <h1>Apnapan Fellowship</h1>
+                <p>Join our fellowship program to become a leader in educational transformation. Work with us to research, develop, and implement innovative solutions that foster student belonging and agency in schools across the globe.</p>
+                <div style="max-width: 600px; margin: 2rem auto; text-align: left;">
+                    <h3 style="color: #8B5CF6; margin-bottom: 1rem;">What You'll Do:</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin: 0.5rem 0; padding: 0.5rem 0; border-left: 3px solid #8B5CF6; padding-left: 1rem;">🔬 Conduct action research in educational settings</li>
+                        <li style="margin: 0.5rem 0; padding: 0.5rem 0; border-left: 3px solid #8B5CF6; padding-left: 1rem;">🤝 Collaborate with educators and school leaders</li>
+                        <li style="margin: 0.5rem 0; padding: 0.5rem 0; border-left: 3px solid #8B5CF6; padding-left: 1rem;">💡 Design innovative educational interventions</li>
+                        <li style="margin: 0.5rem 0; padding: 0.5rem 0; border-left: 3px solid #8B5CF6; padding-left: 1rem;">📊 Analyze data to drive evidence-based solutions</li>
+                    </ul>
+                </div>
+                <a href="#" class="back-button" onclick="showPage('home')">← Back to Home</a>
+            </div>
+        </div>
+
+        <!-- Apna AI Page -->
+        <div id="apna-ai" class="page">
+            <div class="placeholder-page">
+                <h1>Apna AI</h1>
+                <p>Our AI-powered educational platform leverages machine learning and data analytics to personalize learning experiences and strengthen student-teacher connections.</p>
+                <div style="max-width: 700px; margin: 2rem auto; text-align: left;">
+                    <h3 style="color: #8B5CF6; margin-bottom: 1rem;">Key Features:</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                        <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #8B5CF6;">
+                            <h4 style="color: #8B5CF6; margin-bottom: 0.5rem;">🎯 Personalized Learning Paths</h4>
+                            <p style="color: #666; font-size: 0.95rem;">AI-driven recommendations tailored to each student's learning style and pace</p>
+                        </div>
+                        <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #7C3AED;">
+                            <h4 style="color: #7C3AED; margin-bottom: 0.5rem;">📈 Real-time Analytics</h4>
+                            <p style="color: #666; font-size: 0.95rem;">Comprehensive insights into student engagement and learning progress</p>
+                        </div>
+                        <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #6D28D9;">
+                            <h4 style="color: #6D28D9; margin-bottom: 0.5rem;">🤖 Intelligent Tutoring</h4>
+                            <p style="color: #666; font-size: 0.95rem;">AI-powered tutoring system that adapts to individual student needs</p>
+                        </div>
+                        <div style="background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #5B21B6;">
+                            <h4 style="color: #5B21B6; margin-bottom: 0.5rem;">🔗 Community Building</h4>
+                            <p style="color: #666; font-size: 0.95rem;">Tools to strengthen connections between students, teachers, and families</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="back-button" onclick="showPage('home')">← Back to Home</a>
+            </div>
+        </div>
+
+        <!-- Resources Page -->
+        <div id="resources" class="page">
+            <div class="placeholder-page">
+                <h1>Resources</h1>
+                <p>Access our comprehensive library of research papers, toolkits, guides, and best practices to support your educational transformation journey.</p>
+                <div style="max-width: 800px; margin: 2rem auto;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center;">
+                            <div style="background: #8B5CF6; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem;">📚</div>
+                            <h4 style="color: #333; margin-bottom: 1rem;">Research Papers</h4>
+                            <p style="color: #666; font-size: 0.9rem;">Access our latest research findings and academic publications</p>
+                        </div>
+                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center;">
+                            <div style="background: #7C3AED; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem;">🛠️</div>
+                            <h4 style="color: #333; margin-bottom: 1rem;">Toolkits</h4>
+                            <p style="color: #666; font-size: 0.9rem;">Practical toolkits for implementing student-centered approaches</p>
+                        </div>
+                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center;">
+                            <div style="background: #6D28D9; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem;">📖</div>
+                            <h4 style="color: #333; margin-bottom: 1rem;">Implementation Guides</h4>
+                            <p style="color: #666; font-size: 0.9rem;">Step-by-step guides for transforming your educational environment</p>
+                        </div>
+                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center;">
+                            <div style="background: #5B21B6; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem;">🎯</div>
+                            <h4 style="color: #333; margin-bottom: 1rem;">Best Practices</h4>
+                            <p style="color: #666; font-size: 0.9rem;">Proven strategies and case studies from successful implementations</p>
+                        </div>
+                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center;">
+                            <div style="background: #4C1D95; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem;">🎥</div>
+                            <h4 style="color: #333; margin-bottom: 1rem;">Video Library</h4>
+                            <p style="color: #666; font-size: 0.9rem;">Educational videos and webinars from our expert team</p>
+                        </div>
+                        <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); text-align: center;">
+                            <div style="background: #3C0A78; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem;">💬</div>
+                            <h4 style="color: #333; margin-bottom: 1rem;">Community Forum</h4>
+                            <p style="color: #666; font-size: 0.9rem;">Connect with other educators and share experiences</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="back-button" onclick="showPage('home')">← Back to Home</a>
+            </div>
+        </div>
+
+        <!-- Partners Page -->
+        <div id="partners" class="page">
+            <div class="placeholder-page">
+                <h1>Partner with Us</h1>
+                <p>Join our mission to transform education and create inclusive learning environments where every student thrives.</p>
+                <div style="max-width: 600px; margin: 2rem auto; text-align: left;">
+                    <h3 style="color: #8B5CF6; margin-bottom: 1rem;">Partnership Opportunities:</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin: 1rem 0; padding: 1rem; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-left: 4px solid #8B5CF6;">
+                            <strong>🏫 School Partnerships:</strong> Collaborate with us to implement research-based solutions in your school
+                        </li>
+                        <li style="margin: 1rem 0; padding: 1rem; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-left: 4px solid #7C3AED;">
+                            <strong>🔬 Research Collaboration:</strong> Partner with our research team on educational innovation projects
+                        </li>
+                        <li style="margin: 1rem 0; padding: 1rem; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-left: 4px solid #6D28D9;">
+                            <strong>💼 Corporate Sponsorship:</strong> Support our mission through funding and resource partnerships
+                        </li>
+                        <li style="margin: 1rem 0; padding: 1rem; background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-left: 4px solid #5B21B6;">
+                            <strong>🌐 International Collaboration:</strong> Join our global network of educational innovators
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="back-button" onclick="showPage('home')">← Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Project Apnapan. All rights reserved. | Transforming Education Through Data</p>
+        </div>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Update active nav link
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active');
+            });
+            
+            // Find and activate the correct nav link
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('onclick') && link.getAttribute('onclick').includes(pageId)) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Close mobile menu if open
+            document.getElementById('nav-menu').classList.remove('active');
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function toggleNav() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const nav = document.getElementById('nav-menu');
+            const toggle = document.querySelector('.nav-toggle');
+            
+            if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+                nav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
